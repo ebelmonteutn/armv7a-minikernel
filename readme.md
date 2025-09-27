@@ -71,7 +71,7 @@ El Makefile está preparado para iniciar una sesión de depuración.
 2.  **Conecta GDB:**
     En otra terminal, inicia el depurador GDB apuntando al archivo ELF que contiene los símbolos de depuración.
     ```bash
-    gdb-multiarch build/bios.elf  # O el GDB de tu toolchain: arm-none-eabi-gdb
+    gdb-multiarch obj/bios.elf  # O el GDB de tu toolchain: arm-none-eabi-gdb
     ```
 
 3.  **Dentro de GDB:**
