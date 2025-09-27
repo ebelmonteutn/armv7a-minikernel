@@ -91,4 +91,4 @@ Para preguntas relacionadas con seguridad que no sean vulnerabilidades críticas
 
 ---
 
-*Última actualización: Enero 2025*
+*Última actualización: Julio 2025*
