@@ -1,0 +1,44 @@
+# ############################################################################
+# gitignore para proyecto de Kernel Bare-Metal con ARM-GCC
+# ############################################################################
+
+# 1. Ignorar los directorios de salida generados por el Makefile
+# ----------------------------------------------------------------------------
+# Estos directorios contienen los productos de la compilación y no deben
+# formar parte del control de versiones. El código fuente es lo único
+# que se necesita para regenerarlos.
+/obj/
+/bin/
+/lst/
+
+# 2. Ignorar archivos de compilación específicos (por si acaso)
+# ----------------------------------------------------------------------------
+# Aunque los directorios de arriba ya los cubren, es buena práctica
+# listar las extensiones de archivos generados.
+*.o
+*.elf
+*.bin
+*.map
+*.lst
+*.txt
+
+# 3. Ignorar archivos de dependencias
+# ----------------------------------------------------------------------------
+# A menudo los Makefiles generan archivos de dependencias con extensión .d
+*.d
+
+# 4. Ignorar archivos específicos del editor o IDE
+# ----------------------------------------------------------------------------
+# Para evitar subir configuraciones personales del entorno de desarrollo.
+.vscode/
+.idea/
+*.swp
+*~
+*.bak
+
+# 5. Ignorar archivos del sistema operativo
+# ----------------------------------------------------------------------------
+# Archivos de metadatos de macOS, Windows, etc.
+.DS_Store
+Thumbs.db
+desktop.ini
