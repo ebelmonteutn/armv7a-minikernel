@@ -1,5 +1,3 @@
----
-
 # Mini-Kernel para ARMv7-A
 
 ## Descripción
