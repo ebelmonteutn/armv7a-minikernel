@@ -2,7 +2,7 @@
 
 ## Descripción
 
-Este proyecto es un mini-kernel o sistema operativo "bare-metal" diseñado desde cero para la arquitectura de procesadores ARMv7-A. Fue desarrollado como parte de la materia **Tecnicas Digitales II** de la Universidad Tecnológica Nacional, Facultad Regional Buenos Aires (UTN.BA).
+Este proyecto es un mini-kernel o sistema operativo "bare-metal" diseñado desde cero para la arquitectura de procesadores ARMv7-A. Fue desarrollado como parte de la materia **Técnicas  Digitales II** de la Universidad Tecnológica Nacional, Facultad Regional Buenos Aires (UTN.BA).
 
 El kernel se ejecuta en el emulador **QEMU** sobre una máquina virtual `realview-pb-a8` (ARM Cortex-A8) y demuestra los conceptos fundamentales de la programación de sistemas a bajo nivel.
 
