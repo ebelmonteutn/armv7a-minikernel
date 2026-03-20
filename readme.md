@@ -88,6 +88,6 @@ make clean
 
 ## Autor
 
-*   **Enzo Belmonte** - *Estudiante de Ing. Electrónica, UTN.BA* - `ebelmonte@frba.utn.edu.ar`
+*   **Enzo Belmonte** - *Estudiante de Ing. Electrónica, UTN.BA* 
 
 ---
