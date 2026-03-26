@@ -2,80 +2,29 @@
 
 ## Versiones Soportadas
 
-Este proyecto es un mini-kernel educativo desarrollado para la materia Sistemas Digitales II de la UTN.BA. Las siguientes versiones están actualmente soportadas con actualizaciones de seguridad:
+Este proyecto es un mini-kernel educativo desarrollado para la materia Sistemas Digitales II/III de la UTN.BA. Las siguientes versiones están actualmente soportadas con actualizaciones de seguridad:
 
 | Versión | Soportada          |
 | ------- | ------------------ |
 | main    | :white_check_mark: |
 
-## Reportar una Vulnerabilidad de Seguridad
+## Reportar una vulnerabilidad
 
-Si descubres una vulnerabilidad de seguridad en este proyecto, por favor repórtala de manera responsable:
+Dado que este es un proyecto con fines puramente educativos, puedes reportar cualquier vulnerabilidad, error o sugerencia directamente abriendo un nuevo **Issue** público en el repositorio.
 
-### Proceso de Reporte
-
-1. **NO** abras un issue público para vulnerabilidades de seguridad
-2. Envía un email directamente al mantenedor: `ebelmonte@frba.utn.edu.ar`
-3. Incluye en tu reporte:
-   - Descripción detallada de la vulnerabilidad
-   - Pasos para reproducir el problema
-   - Impacto potencial
-   - Posibles soluciones o mitigaciones
-
-### Tiempo de Respuesta
-
-- Reconocimiento inicial: 48 horas
-- Evaluación completa: 1 semana
-- Resolución: Dependiendo de la severidad, entre 1-4 semanas
-
-## Consideraciones de Seguridad para Sistemas Bare-Metal
-
-### Limitaciones Inherentes
-
-Este mini-kernel está diseñado con fines educativos y presenta las siguientes limitaciones de seguridad:
-
-- **Sin aislamiento de memoria**: Las tareas no tienen protección de memoria entre sí
-- **Sin autenticación**: No existe control de acceso o autenticación de usuarios
-- **Sin cifrado**: Los datos se transmiten y almacenan sin cifrado
-- **Scheduler cooperativo**: Las tareas maliciosas pueden afectar todo el sistema
-
-### Vectores de Ataque Conocidos
-
-1. **Desbordamiento de buffer**: Los arrays de tamaño fijo pueden ser vulnerables
-2. **Acceso directo a hardware**: Las tareas pueden acceder directamente a registros del hardware
-3. **Corrupción de pila**: Sin protección MPU, las pilas pueden ser corrompidas
-4. **Inyección de código**: Sin ASLR ni DEP en el entorno emulado
-
-### Entorno de Ejecución
-
-- **Emulación QEMU**: El kernel se ejecuta en un entorno emulado (realview-pb-a8)
-- **Sin MMU**: No hay unidad de manejo de memoria para protección
-- **Modo privilegiado**: Todo el código se ejecuta en modo privilegiado
-
-## Mejores Prácticas de Seguridad
-
-### Para Desarrolladores
-
-1. **Validación de entrada**: Siempre valida los parámetros de entrada
-2. **Límites de buffer**: Verifica los límites de arrays y strings
-3. **Inicialización de variables**: Inicializa todas las variables antes del uso
-4. **Manejo de errores**: Implementa manejo adecuado de condiciones de error
-
-### Para Contribuidores
-
-1. **Revisión de código**: Todo código debe ser revisado antes de ser integrado
-2. **Pruebas de seguridad**: Considera casos de uso maliciosos al escribir pruebas
-3. **Documentación**: Documenta las implicaciones de seguridad de nuevas características
-4. **Seguimiento de dependencias**: Mantén actualizadas las herramientas de desarrollo
+Por favor, incluye:
+- Una descripción detallada del problema.
+- Los pasos necesarios para reproducirlo.
+- Las posibles soluciones o sugerencias de código.
 
 ## Contexto Educativo
 
 Este proyecto está destinado para:
-- Aprendizaje de conceptos de sistemas operativos
-- Comprensión de arquitectura ARMv7-A
-- Experimentación con programación bare-metal
+- Aprendizaje de conceptos y desarrollo de sistemas operativos.
+- Comprensión de la arquitectura ARMv7-A.
+- Experimentación con programación bare-metal.
 
-**ADVERTENCIA**: Este kernel NO debe ser usado en entornos de producción o sistemas críticos de seguridad.
+**ADVERTENCIA**: Este kernel NO debe ser usado en entornos de producción, comerciales o sistemas críticos de seguridad. Sus métodos no implementan protocolos estándar ni características de seguridad del mundo real (como aislamiento de tareas, protección de memoria o permisos de usuario). Todo se ejecuta en modo privilegiado y su propósito es estrictamente académico.
 
 ## Recursos Adicionales
 
